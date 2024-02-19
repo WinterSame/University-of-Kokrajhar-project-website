@@ -1,14 +1,40 @@
+*{
+    list-style-type: none;
+}
+
+.active{
+    border-radius: 5px;
+}
+
+.result li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.result li a:hover{
+    text-decoration: none;
+    color: rgb(63, 152, 231);
+
+}
+
+.dropdown li a{
+    text-decoration: none;
+}
+
+
+.dropdown li a:hover{
+    text-decoration: none;
+    color: rgb(63, 152, 231);
+
+}
+
 
 .img-thumbnail{
     border: none;
-    height: 65px;
+    height: 50px;
     width: auto;
 }
-
-.nav-pills > li.nav-items > a{
-    background: rgb(118, 24, 24);
-}
-
 
 header a span{
     font-size: 10px;
@@ -16,7 +42,7 @@ header a span{
 
 
 .c-item{
-    height: 600px;
+    height: 700px;
 }
 
 .c-img{
@@ -35,6 +61,20 @@ header a span{
     font-size: 2rem;
 }
 
+
+/* media query not working */
+
+/* @media screen (min-width:600px){
+
+    .carousel-caption h1{
+        font-size: 2rem;
+    }
+    
+    .carousel-caption p{
+        font-size: 1rem;
+    }   
+}
+ */
 .btn{
     box-shadow: 1px 1px 8px rgb(0, 0, 0);
     background-color: rgb(204, 164, 246);
@@ -123,13 +163,49 @@ div > header > ul.nav-pills > li.nav-items > a.active{
     background: black;
 }
 
-div.header-container{
+.header-container{
     z-index: 1;
     box-shadow: 1px 1px 10px black;
     background-color: white;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 div.carousel-slide{
     position: relative;
     z-index: 0;
+}
+
+
+/* departments */
+
+
+
+.card{
+    padding: 1.5rem .5em .5em;
+    text-align: center;
+    border-radius: .3em;
+    box-shadow: 0 0 10px rgba(0, 0,0,.2);
+}
+
+.card-title{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.card-text{
+    height: 125px;
+    text-align: justify;
+}
+
+.card-body{
+    background-color: aliceblue;
+}
+
+.card-img-top{
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius:50%;
+    box-shadow: 0 0 20px rgb(193, 192, 192);
 }

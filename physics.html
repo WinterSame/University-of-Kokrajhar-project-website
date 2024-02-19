@@ -2,59 +2,471 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link rel="stylesheet" href="./resources/bootstrap-5.3.2-dist/css/bootstrap.css">
+
     <link rel="stylesheet" href="./resources/css/index.css">
-    <title>Physics | UOK </title>
+
+
+
+
+    <title>UOK | Physics</title>
 </head>
 
 <body>
     <!-- header -->
-    <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-2 mb-4 border-bottom">
-            <a href="/"
-                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <img src="./resources/images/site_logo.png" class="img-thumbnail" alt="site logo">
-                <span class="fs-4">University of Kokrajhar</span>
-            </a>
+    <nav class="navbar navbar-expand-lg fixed-top header-container">
+        <div class="container-fluid justify-content-between">
+            <a class="navbar-brand" href="#"><img src="./resources/images/icons/uni-logo.png" alt="site logo"
+                    class="img-thumbnail"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
 
-            <ul class="nav nav-pills align-items-center">
-                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li> 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Departments</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="lifescience.html">Department of Life Science</a></li>
-                      <li><a class="dropdown-item" href="chemistry.html">Department of Chemistry</a></li>
-                      <li><a class="dropdown-item" href="physics.html">Department of Physics</a></li>
-                      <li><a class="dropdown-item" href="mathematics.html">Department of Mathematics</a></li>
-                      <li><a class="dropdown-item" href="management.html">Department of Management</a></li>
-                      <li><a class="dropdown-item" href="commerce.html">Department of Commerce</a></li>
-                      <li><a class="dropdown-item" href="education.html">Department of Education</a></li>
-                      <li><a class="dropdown-item" href="economics.html">Department of Economics</a></li>
-                      <li><a class="dropdown-item" href="bodo.html">Department of Bodo</a></li>
-                      <li><a class="dropdown-item" href="assamese.html">Department of Assamese</a></li>
-                      <li><a class="dropdown-item" href="english.html">Department of English</a></li>
-                      <!-- <li><hr class="dropdown-divider"> </li> -->
-                    </ul>
-                  </li>
-                <li class="nav-item"><a href="#" class="nav-link">News</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-            </ul>
-        </header>
-    </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./resources/images/icons/uni-logo.png"
+                        alt="site logo" class="img-thumbnail"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-around flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active text-bg-secondary" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Departments</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="lifescience.html">Department of Life Science</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="chemistry.html">Department of Chemistry</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="physics.html">Department of Physics</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="mathematics.html">Department of Mathematics</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="management.html">Department of Management</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="commerce.html">Department of Commerce</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="education.html">Department of Education</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="economics.html">Department of Economics</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="bodo.html">Department of Bodo</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="assamese.html">Department of Assamese</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="english.html">Department of English</a>
+                            </li>
+                            <!-- <li><hr class="dropdown-divider"> </li> -->
+                        </ul>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a href="notice.html" class="nav-link text-dark">Notice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link text-dark">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link text-dark">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link text-dark">Contact</a>
+                    </li>
 
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- header ends -->
 
+    <!-- hero section -->
+    <div id="hero-carousel" class="carousel slide carousel-slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active c-item">
+                <img src="./resources/images/life science (3).jpg" class="d-block w-100 c-img"
+                    alt="university campus" />
+                <div class="carousel-caption top-0 mt-5 pt-5 d-none d-md-block">
+                    <h1 class="mt-5 pt-5">Welcome To Life Science</h1>
+                    <p>Exploring the Tapestry of Life: Unraveling Mysteries, Inspiring Discoveries in our Life Science
+                        Department.</p>
+                    <a class="btn btn-1" download href="./resources/Downloads/Brochure_UOK.pdf" role="button">Download
+                        Brochure</a>
+                    <a class="btn btn-2" href="#" role="button">Quick Enquiry</a>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="./resources/images/life science (1).jpg" class="d-block w-100 c-img"
+                    alt="university campus" />
+                <div class="carousel-caption top-0 mt-5 pt-5 d-none d-md-block">
+                    <h1 class="mt-5 pt-5">World Class Laboratory</h1>
+                    <p>Research, Work and Publish </p>
+                    <a class="btn btn-1" download href="./resources/Downloads/Brochure_UOK.pdf" role="button">Download
+                        Brochure</a>
+                    <a class="btn btn-2" href="#" role="button">Quick Enquiry</a>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="./resources/images/life science (2).jpg" class="d-block w-100 c-img" alt="student studying" />
+                <div class="carousel-caption top-0 mt-5 pt-5 d-none d-md-block">
+                    <h1 class="mt-5 pt-5">Discover the Hidden Mysteries</h1>
+                    <p>Unveiling Nature's Mysteries, One Discovery at a Time!</p>
+                    <a class="btn btn-1" download href="./resources/Downloads/Brochure_UOK.pdf" role="button">Download
+                        Brochure</a>
+                    <a class="btn btn-2" href="#" role="button">Quick Enquiry</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- hero ends -->
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <!-- about the department starts -->
+
+    <main>
+
+        <div class="container">
+            <div class="container py-4">
+                <header class="pb-0 mb-0 border-bottom">
+                    <span class="fs-4">Welcome to</span>
+                    <h2 class="display-5 fw-bold">Department of Life Science</h2>
+                </header>
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="./resources/images/classroom.jpg" class="d-block mx-lg-auto img-fluid"
+                            alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="lead"> The Department of Life Science was established in 2014 and offers M.Sc. degree
+                            in Botany. The Department also introduced a Ph.D. programme in 2017. Since its inception,
+                            the Department of Botany has remained at the forefront of teaching and research in Botany.
+                            The Department aims to provide quality-based higher education in plant sciences, catering to
+                            the needs of many in the region. The Department emphasizes to promote integrated
+                            understanding and utilization of plants in various conventional and frontier areas of
+                            Botany. The major thrust areas of the Department are floristic studies of the region, plant
+                            physiology, pharmacology, biodiversity conservation, forest ecology, algology, fungal
+                            diversity, lichenology, microbiology, cytogenetics, bioremediation and nanobiotechnology.
+                        </p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button class="btn btn-lg btn-3" type="button">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- about the department ends -->
+
+            <!-- Faculty ablumn starts -->
+
+            <div class="container col-md-12 pt-5 mb-0 text-center">
+                <hr>
+                <h3>Teaching Staff</h3>
+                <hr>
+            </div>
+
+            <div class="album py-5 bg-body-tertiary">
+                <div class="container">
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2">
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="./resources/images/teacher (1).jpg" alt="Teacher 1" class="card-img-top">
+                                <div class="card-body">
+                                    <h5>Fyokla Agner</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae provident repellat exercitationem aspernatur ea veritatis rerum ab quasi odio, tempore, cupiditate eius illum sint facere nihil facilis dolorum ducimus repudiandae.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="./resources/images/teacher (2).jpg" alt="Teacher 1" class="card-img-top">
+                                <div class="card-body">
+                                    <h5>NFN Marcellus</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cupiditate, assumenda facere voluptates doloremque nisi repellat odio aut explicabo. Debitis, in voluptates? Quia ea impedit aliquid dolore facere, quibusdam dolores!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="./resources/images/teacher (3).jpg" alt="Teacher 1" class="card-img-top">
+                                <div class="card-body">
+                                    <h5>Shukri Kazimir</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sequi doloremque, amet pariatur minus, veniam tempora distinctio excepturi voluptatum aut tenetur? Amet architecto beatae repudiandae esse corrupti fuga hic nisi?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="./resources/images/teacher (4).jpg" alt="Teacher 1" class="card-img-top">
+                                <div class="card-body">
+                                    <h5>Fuyuko Milcah</h5>
+                                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed dignissimos veritatis sit voluptas aperiam nemo, beatae tenetur nesciunt ipsa reiciendis non magni. Laborum quia voluptates veritatis molestiae culpa, nobis fugit?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="./resources/images/teacher (5).jpg" alt="Teacher 1" class="card-img-top">
+                                <div class="card-body">
+                                    <h5>Socrates Xanthippos</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo error repudiandae cumque. Iusto consectetur dolore voluptates ex aut id, aperiam, laborum labore accusantium fugiat aspernatur. Deleniti id earum expedita nihil.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="./resources/images/teacher (6).jpg" alt="Teacher 1" class="card-img-top">
+                                <div class="card-body">
+                                    <h5>Anahita Eadweard</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quaerat nesciunt eius doloribus corporis suscipit nihil qui explicabo aliquid dolores facere dolorum, quam illo, inventore earum totam sint facilis. Totam.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+                    <div class="container col-md-12 pt-5 mb-0 text-center">
+                        <hr>
+                        <h3>Non-Teaching Staff</h3>
+                        <hr>
+                    </div>
+
+                    <div class="album py-5 bg-body-tertiary">
+                        <div class="container">
+        
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <img src="./resources/images/teacher (7).jpg" alt="Teacher 1" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5>Dani Hroporikks</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore excepturi placeat accusamus. Tempore, vitae consequatur! Voluptatem rem fuga necessitatibus iure iusto, labore totam dignissimos iste, ea asperiores officiis neque.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <img src="./resources/images/teacher (8).jpg" alt="Teacher 1" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5>Swanhild Barclay</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptatem praesentium, quam suscipit iusto vero, repellat similique dicta iste aut accusamus laboriosam quis. A, molestiae quae non maiores nostrum ea.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card shadow-sm">
+                                        <img src="./resources/images/teacher (9).jpg" alt="Teacher 1" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5>Sukhrab Poem</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ipsum vel, repellendus, consequuntur facere nisi sequi deleniti possimus voluptas sunt numquam corporis neque voluptatem! Voluptatem fugiat odit libero beatae nobis.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Faculty ablumn ends -->
+
+
+                    <!-- making a grid system -->
+
+                    <div class="container col-md-12 pt-5 mb-0 text-center">
+                        <hr>
+                        <h3>Students Corner</h3>
+                        <hr>
+                    </div>
+
+
+                    <div class="container">
+                        <div class="student-corner">
+                            <div class="students-corner-items">
+                                <img src="./resources/images/icons/calendar-date-fill.svg" width="40px" alt="icon">
+                                <div class="students-corner-items-lists">
+                                    <h4>Academic Calender</h4>
+                                </div>
+                            </div>
+                            <div class="students-corner-items">
+                                <img src="./resources/images/icons/collection-fill.svg" width="40px" alt="icon">
+                                <div class="students-corner-items-lists">
+                                    <h4>Prospectus</h4>
+                                </div>
+                            </div>
+                            <div class="students-corner-items">
+                                <img src="./resources/images/icons/file-earmark-person-fill.svg" width="40px"
+                                    alt="icon">
+                                <div class="students-corner-items-lists">
+                                    <h4>Notice for Results</h4>
+                                </div>
+                            </div>
+                            <div class="students-corner-items">
+                                <img src="./resources/images/icons/mortarboard-fill.svg" width="40px" alt="icon">
+                                <div class="students-corner-items-lists">
+                                    <h4>Notice for Admissions</h4>
+                                </div>
+                            </div>
+                            <div class="students-corner-items">
+                                <img src="./resources/images/icons/pencil-square.svg" width="40px" alt="icon">
+                                <div class="students-corner-items-lists">
+                                    <h4>Notice for Examinations</h4>
+                                </div>
+                            </div>
+                            <div class="students-corner-items">
+                                <img src="./resources/images/icons/envelope-paper-fill.svg" width="40px" alt="icon">
+                                <div class="students-corner-items-lists">
+                                    <h4>Question Papers</h4>
+                                </div>
+                            </div>
+
+                            <!-- <h4>Notice for Admissions</h4>
+            <h4></h4>
+            <h4></h4>
+            <h4></h4>
+            <h4></h4>
+            <h4></h4> -->
+                        </div>
+                    </div>
+
+                    <!-- students corner section ends -->
+
+                    <!-- End quick links starts -->
+
+
+                    <div class="container">
+                        <footer class="col-md-lg-12 pt-3 my-md-5 pt-5 md-5 border-top text-justify">
+                            <div class="row">
+                                <div class="col-4 col-md">
+                                    <h5>Cells</h5>
+                                    <ul class="list-unstyled text-small">
+                                        <li class="mb-1">
+                                            <a class="link-secondary text-decoration-none" href="#">Placement Cell</a>
+                                        </li>
+                                        <li class="mb-1">
+                                            <a class="link-secondary text-decoration-none" href="#">Student Counselling
+                                                Cell</a>
+                                        </li>
+                                        <li class="mb-1">
+                                            <a class="link-secondary text-decoration-none" href="#">Women Cell</a>
+                                        </li>
+                                        <li class="mb-1">
+                                            <a class="link-secondary text-decoration-none" href="#">Students Grievanece
+                                                Redressal Form</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-4 col-md">
+                                    <h5>Committee</h5>
+                                    <ul class="list-unstyled text-small">
+                                        <li class="mb-1">
+                                            <a class="link-secondary text-decoration-none" href="#">Grievanece Redressal
+                                                Committee</a>
+                                        </li>
+                                        <li class="mb-1">
+                                            <a class="link-secondary text-decoration-none" href="#">Internal Complaints
+                                                Committee</a>
+                                        </li>
+                                        <li class="mb-1">
+                                            <a class="link-secondary text-decoration-none" href="#">Alumni Committee</a>
+                                        </li>
+                                        <li class="mb-1">
+                                            <a class="link-secondary text-decoration-none" href="#">Students Union
+                                                Body</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-4 col-md">
+                                    <h5>Useful Links</h5>
+                                    <ul class="list-unstyled text-small">
+                                        <li class="mb-1">
+                                            <a class="link-secondary text-decoration-none" href="#">UGC</a>
+                                        </li>
+                                        <li class="mb-1">
+                                            <a class="link-secondary text-decoration-none" href="#">NAAC</a>
+                                        </li>
+                                        <li class="mb-1">
+                                            <a class="link-secondary text-decoration-none" href="#">DHE</a>
+                                        </li>
+                                        <li class="mb-1">
+                                            <a class="link-secondary text-decoration-none" href="#">AICTE</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-4 col-md">
+                                    <h5>About</h5>
+                                    <ul class="list-unstyled text-small">
+                                        <li class="mb-1">
+                                            <a class="link-secondary text-decoration-none" href="#">Rules And
+                                                Regulations</a>
+                                        </li>
+                                        <li class="mb-1">
+                                            <a class="link-secondary text-decoration-none" href="#">Web Team</a>
+                                        </li>
+                                        <li class="mb-1">
+                                            <a class="link-secondary text-decoration-none" href="#">Privacy Policy</a>
+                                        </li>
+                                        <li class="mb-1">
+                                            <a class="link-secondary text-decoration-none" href="#">Terms and
+                                                Conditions</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+                    <div class="col-12 col-md-12 text-center foot pt-3">
+                        <img class="mb-1" src="./resources/images/icons/uni-logo.png" alt="" width="auto" height="30" />
+                        <small class="d-block mb-0 text-body-secondary">©University of Kokrajhar 2022–2023</small>
+                        <small class="d-block pb-3 text-body-secondary">@SameWinter</small>
+                    </div>
+
+                    <!-- End quick links ends -->
+
+                    <script src="./resources/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+
 </body>
 
 </html>
