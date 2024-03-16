@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="./resources/bootstrap-5.3.2-dist/css/bootstrap.css">
 
+    <link rel="stylesheet" href="./resources/css/form.css">
+
     <link rel="stylesheet" href="./resources/css/index.css">
 
     
@@ -20,7 +22,7 @@
     <!-- header -->
     <nav class="navbar navbar-expand-lg fixed-top header-container">
         <div class="container-fluid justify-content-between">
-          <a class="navbar-brand" href="#"><img src="./resources/images/icons/uni-logo.png" alt="site logo" class="img-thumbnail"></a>
+          <a class="navbar-brand" href="index.html"><img src="./resources/images/icons/uni-logo.png" alt="site logo" class="img-thumbnail"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -34,7 +36,7 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-around flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active text-bg-secondary" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active text-bg-secondary" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
@@ -105,35 +107,42 @@
             <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+
+
         <div class="carousel-inner">
             <div class="carousel-item active c-item">
                 <img src="./resources/images/university campus.jpg" class="d-block w-100 c-img"
                     alt="university campus" />
-                <div class="carousel-caption top-0 mt-5 pt-5 d-none d-md-block">
+                <div class="carousel-caption top-0 mt-5 pt-5  d-md-block">
                     <h1 class="mt-5 pt-5">Welcome To University of Kokrajhar</h1>
                     <p>Empowering youths for a better tomorrow</p>
                     <a class="btn btn-1" download href="./resources/Downloads/Brochure_UOK.pdf" role="button">Download Brochure</a>
-                    <a class="btn btn-2" href="#" role="button">Quick Enquiry</a>
+                    <a class="btn btn-2" href="#formsection" role="button">Quick Enquiry</a>
                 </div>
             </div>
             <div class="carousel-item c-item">
                 <img src="./resources/images/pexels-armin-rimoldi-5553071.jpg" class="d-block w-100 c-img"
                     alt="university campus" />
-                <div class="carousel-caption top-0 mt-5 pt-5 d-none d-md-block">
+                <div class="carousel-caption top-0 mt-5 pt-5  d-md-block">
                     <h1 class="mt-5 pt-5">Quality Education</h1>
                     <p>We believe in quality education!</p>
                     <a class="btn btn-1" download href="./resources/Downloads/Brochure_UOK.pdf" role="button">Download Brochure</a>
-                    <a class="btn btn-2" href="#" role="button">Quick Enquiry</a>
+                    <a class="btn btn-2" href="#formsection" role="button">Quick Enquiry</a>
                 </div>
             </div>
+
+
+
+
+            
             <div class="carousel-item c-item">
                 <img src="./resources/images/pexels-tima-miroshnichenko-9572568.jpg" class="d-block w-100 c-img"
                     alt="student studying" />
-                <div class="carousel-caption top-0 mt-5 pt-5 d-none d-md-block">
+                <div class="carousel-caption top-0 mt-5 pt-5  d-md-block">
                     <h1 class="mt-5 pt-5">World Class Facilities</h1>
                     <p>Get the best out of you course!</p>
                     <a class="btn btn-1" download href="./resources/Downloads/Brochure_UOK.pdf" role="button">Download Brochure</a>
-                    <a class="btn btn-2" href="#" role="button">Quick Enquiry</a>
+                    <a class="btn btn-2" href="#formsection" role="button">Quick Enquiry</a>
                 </div>
             </div>
         </div>
@@ -146,13 +155,14 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+      
     <!-- hero ends -->
 
     <!-- Albumn starts -->
 
     <div class="container">
         
-        <div class="container px-4 py-5" id="custom-cards">
+        <div class="container px-4 py-5 text-justify" id="custom-cards">
 
             <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 pt-5 pb-4">
                 <div class="col">
@@ -302,6 +312,92 @@
     
     <!-- students corner section ends -->
 
+
+    <!-- form -->
+
+       <!-- contact us -->
+       <section id="formsection">
+
+       <div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <p>Fill in the data below.</p>
+                        <form class="requires-validation" novalidate>
+
+                            <div class="col-md-12">
+                               <input class="form-control" type="text" name="name" placeholder="Full Name" required>
+                               <div class="valid-feedback">Username field is valid!</div>
+                               <div class="invalid-feedback">Username field cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
+                                 <div class="valid-feedback">Email field is valid!</div>
+                                 <div class="invalid-feedback">Email field cannot be blank!</div>
+                            </div>
+
+                           <div class="col-md-12">
+                                <select class="form-select mt-3" required>
+                                      <option selected disabled value="">Choose a Department</option>
+                                      <option value="dols">Department of Life Science</option>
+                                      <option value="dochem">Department of Chemistry</option>
+                                      <option value="dophy">Department of Physics</option>
+                                      <option value="domath">Department of Mathematics</option>
+                                      <option value="domanage">Department of Management</option>
+                                      <option value="docom">Department of Commerce</option>
+                                      <option value="doedu">Department of Education</option>
+                                      <option value="doeco">Department of Economics</option>
+                                      <option value="dobodo">Department of Bodo</option>
+                                      <option value="doas">Department of Assamese</option>
+                                      <option value="doeng">Department of English</option>
+                               </select>
+                                <div class="valid-feedback">You choose a department!</div>
+                                <div class="invalid-feedback">Please choose a department!</div>
+                           </div>
+
+
+                           <div class="col-md-12">
+                                <select class="form-select mt-3" required>
+                                      <option selected disabled value="">Gender</option>
+                                      <option value="gender1">Male</option>
+                                      <option value="gender2">Female</option>
+                                      <option value="secret">Prefer not to say</option>
+                               </select>
+                                <div class="valid-feedback">You choose a Gender!</div>
+                                <div class="invalid-feedback">Please choose a Gender!</div>
+                           </div>
+
+
+                          
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                          <label class="form-check-label">I confirm that all data are correct</label>
+                         <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
+                        </div>
+                  
+
+                            <div class="form-button mt-3">
+                                <button id="submit" type="submit" class="btn btn-primary btn-5">Send Enquiry</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- contact us -->
+
+  
+    <!-- form ends -->
+
     <!-- End quick links starts -->
 
 
@@ -380,6 +476,11 @@
             </div>
         </footer>
     </div>
+    
+
+ 
+
+
     <div class="col-12 col-md-12 text-center foot pt-3">
         <img class="mb-1" src="./resources/images/icons/uni-logo.png" alt="" width="auto" height="30" />
         <small class="d-block mb-0 text-body-secondary">©University of Kokrajhar 2022–2023</small>

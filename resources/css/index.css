@@ -64,17 +64,72 @@ header a span{
 
 /* media query not working */
 
-/* @media screen (min-width:600px){
+
+@media only screen and (max-width: 700px) {
+
+    .img-thumbnail{
+        border: none;
+        height: 40px;
+        width: auto;
+    }
 
     .carousel-caption h1{
-        font-size: 2rem;
+        font-size: 20px;
     }
     
     .carousel-caption p{
-        font-size: 1rem;
-    }   
-}
- */
+        font-size: 20px;
+    }  
+
+    .c-item{
+        height: 500px;
+    }
+    
+    .c-img{
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.4);
+        filter: blur(10);
+    
+    }
+
+    .carousel-control-prev-icon{
+        font: small;
+    }
+   
+    .carousel-control-next-icon{
+        font: small;
+    }
+
+
+    .btn{
+        box-shadow: 1px 1px 8px rgb(0, 0, 0);
+        background-color: rgb(204, 164, 246);
+        font-size: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    .btn-1:hover{
+        box-shadow: none;
+        border: 1px solid rgb(204, 164, 246);
+    }
+    
+    .btn-2{
+        background-color: aliceblue;
+        border: solid 1px white;
+        padding: 2px;
+    }
+    .btn-2:hover{
+        box-shadow: none;
+        border: solid 1px white;
+        padding: 2px;
+    }
+    
+    
+  }
+
+
+
 .btn{
     box-shadow: 1px 1px 8px rgb(0, 0, 0);
     background-color: rgb(204, 164, 246);
@@ -115,6 +170,23 @@ header a span{
     background-color: transparent;
     border: none;
 }
+.btn-5{
+    border: none;
+    background-color: rgb(247, 247, 248);
+    font-size: 1rem;
+    padding: 3px;
+    color: black;
+    border-color: black;
+    align-content: center;
+}
+
+.btn-5:hover{
+    color: black;
+    background-color: transparent;
+    background-color: rgb(184, 184, 185);
+    border: none;
+}
+
 
 .dialog{
     text-decoration: none;
@@ -208,4 +280,15 @@ div.carousel-slide{
     height: 150px;
     border-radius:50%;
     box-shadow: 0 0 20px rgb(193, 192, 192);
+}
+
+nav.nav-bar{
+    position: relative;
+    z-index: 9;
+}
+
+
+.lead{
+    text-align: justify;
+    font-size: 1em;
 }

@@ -1,0 +1,33 @@
+.g-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 110px;
+    padding-left: 80px;
+    padding-top: 100px;
+    gap: 10px;
+}
+
+.gallery-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    gap: 10px;
+}
+
+.centered {
+    position: absolute;
+    font-size: 1.5em;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.image-container > img{
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+}
